@@ -1,0 +1,87 @@
+$primary-color:#272727;
+$secondary-color: #14A76C;
+$border-color: #018a3a;
+$bg-primary-color: #7dc783;
+$bg-secondary-color: #94ff9d;
+$bg-triary-color: #19d862;
+
+.new-note-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: $bg-secondary-color;
+
+    .split {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    
+    
+        .row{
+            .new-note-input{
+                border: none;
+                outline: none;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 0.5rem;
+                background: $bg-secondary-color;
+                border-bottom: 1px solid $border-color;
+                width: 90%;
+                transition: all 0.3s ease-in-out;
+                margin-bottom: 0.5rem;
+            }
+
+            .new-note-input:focus{
+                color: #042f47;
+                border-bottom: 1px solid $secondary-color;
+            }
+
+            .tag-input{
+                font-weight: 500;
+            }
+
+            .tag{
+                display: inline-block;
+                .tag-text{
+                    margin: 0.2rem;
+                    background-color: $bg-primary-color;
+                    color: $primary-color;
+                    font-size: 0.8rem;
+                    max-width: fit-content;
+                    padding: 0.3rem 0.5rem;
+                }
+            }
+
+            .save-button{
+                margin-top: 0.5rem;
+                border: 1px solid $border-color;
+                outline: none;
+                padding: 0.5rem;
+                width: 90%;
+                cursor: pointer;
+                background-color: $primary-color;
+                color: $bg-triary-color;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    border:1px solid $border-color;
+                    transform: scale(1.03);
+                }
+            }
+
+            .timestamp{
+                font-size: 0.8rem;
+                color: $primary-color;
+                margin-top: 0.5rem;
+            }
+        }   
+    }
+}
+
+.mde-header .mde-tabs button.selected {
+    background-color: $bg-primary-color;
+    padding: 4px;
+    color: white;
+}

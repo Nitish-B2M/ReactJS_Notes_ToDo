@@ -1,0 +1,44 @@
+// define colors shortcuts
+$primary-color: rgb(32, 148, 163);
+$secondary-color: azure;
+$border-color: #1a1a1a;
+$shadow-color: rgba(0, 0, 0, 0.5);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.App{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+    "sidebar navbar"
+    "sidebar mainbody";
+}
+
+
+// define colors shortcuts
+// $primary-color: #5A7488;
+// $primary-color: #FF7518;
+// $primary-color: #FF7518;
+// $secondary-color: azure;
+// $secondary-bg-color: #e2e2e2;
+// $border-color: #0c4769;
+// $shadow-color: rgba(164, 249, 255, 0.5);
+// $sidebar-list-color: #131313;
+// $sidebar-list-color: #f8f8f8;
+
+// color for dark mode
+// $dark-mode-color: #141414;
+// $dark-mode-secondary-color: #d9dbdd;
+// $dark-mode-border-color: #242424;
+// $dark-mode-shadow-color: rgba(164, 249, 255, 0.5);
+// $dark-mode-sidebar-list-color: #131313;

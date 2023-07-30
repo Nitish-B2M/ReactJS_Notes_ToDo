@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "react-bootstrap": "^2.8.0",
+    "react-markdown": "^8.0.7",
+    "react-mde": "^11.5.0",
+    "react-scripts": "^2.1.3",
+    "react-split": "^2.0.14",
+    "showdown": "^2.1.0"
+  },
+  "name": "keepmeup",
+  "description": "- npx create-react-app keepmeup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

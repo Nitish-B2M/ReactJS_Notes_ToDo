@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+// define colors shortcuts
+$primary-color:#272727;
+$secondary-color: #14A76C;
+$border-color: #018a3a;
+$bg-primary-color: #7dc783;
+$bg-secondary-color: #94ff9d;
+$bg-triary-color: #19d862;
+$bg-quaternary-color: #00e68a;
+
+$white-color: #ffffff;
+$hover-color: #111;
+$edit-btn-color: #006abb;
+$edit-hover-color: #00508d;
+$remove-btn-color: #ff0000;
+$remove-hover-color: #b30000;
+
+// white-mode
+$w-primary-color:#e6e6e6;
+$w-hover-color: #111;
+
+.navbar{
+    grid-area: navbar;
+    
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1rem 2rem;
+    transition: 0.6s;
+    background-color: $primary-color;
+    border-bottom: 2px solid $border-color;
+    box-shadow: 0 0 6px $border-color;
+
+    a {
+        text-decoration: none;
+        color: $secondary-color;
+        padding: 10px;
+        transition: all .4s ease-in;
+        margin: 2px;
+    }
+
+    a:hover{
+        color: $primary-color;
+        background-color: $white-color;
+        border-radius: 5px;
+    }
+}
+
+.white-mode{
+    .navbar{
+        background-color: $w-primary-color;
+        a:hover{
+            color: $w-primary-color;
+            background-color: $w-hover-color;
+        }
+    }
+}
